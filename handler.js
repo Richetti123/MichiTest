@@ -208,7 +208,7 @@ if (settings) {
     restrict: false,
     antiCall: false,
     antiPrivate: false,
-    modejadibot: true,
+    modejadibot: false,
     antispam: false,
     audios_bot: true,
     modoia: false
@@ -764,7 +764,7 @@ export async function callUpdate(callUpdate) {
     if (nk.isGroup == false) {
       if (nk.status == 'offer') {
         const callmsg = await mconn?.conn?.reply(nk.from, `Hola *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'videollamadas' : 'llamadas'} no están permitidas, serás bloqueado.\n-\nSi accidentalmente llamaste póngase en contacto con mi creador para que te desbloquee!`, false, { mentions: [nk.from] });
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;ehl villano 👑;;;\nFN:ehl villano👑\nORG:ehl villano 👑\nTITLE:\nitem1.TEL;waid=5493483466763:+549 348 346 6763\nitem1.X-ABLabel:ehl villano 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:ehl villano 👑\nEND:VCARD`;
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;MichiBot;;;\nFN:MichiBot\nORG:MichiBot\nTITLE:\nitem1.TEL;waid=5217771303481:+5217771303481\nitem1.X-ABLabel:ehl villano 👑\nX-WA-BIZ-DESCRIPTION:[❗] ᴄᴏɴᴛᴀᴄᴛᴀ ᴀ ᴇsᴛᴇ ɴᴜᴍ ᴘᴀʀᴀ ᴄᴏsᴀs ɪᴍᴘᴏʀᴛᴀɴᴛᴇs.\nX-WA-BIZ-NAME:MichiBot\nEND:VCARD`;
         await mconn.conn.sendMessage(nk.from, { contacts: { displayName: 'ehl villano 👑', contacts: [{ vcard }] } }, { quoted: callmsg });
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
