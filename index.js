@@ -25,7 +25,7 @@ say('Iniciando...', {
   gradient: ['yellow', 'cyan'],
 });
 
-say('Luna-botv6', {
+say('MichiBot', {
   font: 'block',
   align: 'center',
   gradient: ['blue', 'magenta'],
@@ -34,7 +34,7 @@ say('Luna-botv6', {
 // Opcional: beep de sistema
 process.stdout.write('\x07'); // sonido beep
 
-console.log(chalk.cyanBright.bold('—◉ Bienvenido al sistema Luna-botv5'));
+console.log(chalk.cyanBright.bold('—◉ Bienvenido al sistema MichiBot'));
 console.log(chalk.greenBright('—◉ Preparando entorno y verificaciones necesarias...'));
 
 // Verificar y preparar carpeta ./src/tmp con permisos
