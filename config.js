@@ -65,7 +65,7 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nLuna-Botv5`;
+global.wm2 = `${dia} ${fecha}\nMichiBot`;
 global.gt = 'MichiBot';
 global.mysticbot = 'MichiBot';
 global.channel = '';
